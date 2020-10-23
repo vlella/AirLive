@@ -1,10 +1,10 @@
 # AirLive
 Real-Time Air Quality Notification System 
 
-|  || Presentation: [slides](https://docs.google.com/presentation/d/1KBbgT0q_SNNj5mslXLv_mF1KhBmh5bERqNGoqnlGCHU/edit#slide=id.p)  | Demo: [AirLive](https://drive.google.com/file/d/1cVFQIyaUvTPXy6sGhw_ViHNawF61VsCf/view?usp=sharing) | Contact: [linkedin](https://www.linkedin.com/in/vishal-lella/) |
+|  || Presentation: [slides](https://docs.google.com/presentation/d/1KBbgT0q_SNNj5mslXLv_mF1KhBmh5bERqNGoqnlGCHU/edit#slide=id.p)  | Demo: [AirLive](https://drive.google.com/file/d/1cVFQIyaUvTPXy6sGhw_ViHNawF61VsCf/view?usp=sharing) | Contact: [linkedin](https://www.linkedin.com/in/vishal-lella/) 
 |----------|----------------|--------|-----------|-----------|
 
-#About
+# About
 There is so much increase in pollution levels over the years due to urbanisation, industrialization, global warming etc. Off late, I was really concerned about forest wildfires in California, that stuck to my brain why not create a real time air quality notification system. I built location aware real time Air Quality notification system where users get notified when pollutants have crossed the AQI limit to stay safe indoors.
 
 ![flag](images/flag.png)
@@ -12,7 +12,7 @@ There is so much increase in pollution levels over the years due to urbanisation
 AIR QUALITY INDEX (AQI) metric is calcluated using the formula shown below and there are 6 categories of AIR according to the calculated AQI  value.
 
 ![AQI](images/AQI_Category.png)
-#Data Pipeline
+# Data Pipeline
 
 ![Pipeline](images/pipeline.png)
 
