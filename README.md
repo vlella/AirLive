@@ -16,7 +16,7 @@ AIR QUALITY INDEX (AQI) metric is calcluated using the formula shown below and t
 
 ![Pipeline](images/pipeline.png)
 
-#Technologies Used
+# Technologies Used
  - Data Source
 	 - Simulated Real Time Air Quality Data using Kinesis Data Generator
  - Ingestion
@@ -36,7 +36,7 @@ AIR QUALITY INDEX (AQI) metric is calcluated using the formula shown below and t
  - Batch querying
  	 - AWS Athena
 
-#Workflow
+# Workflow
 
 Built a location aware real time air quality notification system by ingesting sensor data to Kinesis coming from
 10,000 cities spread globally at 5000 tps.
@@ -130,7 +130,7 @@ Dumped the data in S3 bucket so that using Athena
 
 ```
 
-#Real time Visualization
+# Real time Visualization
 ![Kibana](images/kibana_zoomout.png)
 
 Here we have geo hash map encoding the AQI value, let's zoom in to see the AQI density across the globe.
@@ -139,18 +139,18 @@ Here we have geo hash map encoding the AQI value, let's zoom in to see the AQI d
 ![Kibana](images/kibana_zoomin.png)
 
 
-#Real time Alerting
+# Real time Alerting
 
 I have a subscriber who is in the vicinity of a hazardous city who will be getting notification soon. For demo purpose, I am the subscriber registered to subscriber registration service with my mobile number. I will be getting notfication alerting regarding AQI category and AQI value.
 ![Kibana](images/alerting.png)
 
 
-#Batch querying
+# Batch querying
 We have our batch data saved in S3 crawled using glue crawlers which creates glue catalog tables, we can use Athena to 
 do SQL type querying on these glue tables, which is super powerful for all our batch needs. Below are some sample
 queries:  
 
-####Select ALL Athena query
+#### Select ALL Athena query
 
 ```
 SELECT * 
@@ -165,7 +165,7 @@ Response
 
 
 
-####Most Polluted countries ranked by Number of cities with AQI in Hazardous + Average AQI for those cities
+#### Most Polluted countries ranked by Number of cities with AQI in Hazardous + Average AQI for those cities
 
 ```
 SELECT COUNTRY, AVG_AQI, CITY_COUNT, ROW_NUMBER() OVER(ORDER BY city_count DESC,avg_aqi DESC) POLLUTION_RANK
