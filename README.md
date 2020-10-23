@@ -7,14 +7,14 @@ Real-Time Air Quality Notification System
 #About
 There is so much increase in pollution levels over the years due to urbanisation, industrialization, global warming etc. Off late, I was really concerned about forest wildfires in California, that stuck to my brain why not create a real time air quality notification system. I built location aware real time Air Quality notification system where users get notified when pollutants have crossed the AQI limit to stay safe indoors.
 
-![flag](/Users/vishallella/Documents/workspace/AirLive/images/flag.png)
+![flag](images/flag.png)
 
 AIR QUALITY INDEX (AQI) metric is calcluated using the formula shown below and there are 6 categories of AIR according to the calculated AQI  value.
 
-![AQI](/Users/vishallella/Documents/workspace/AirLive/images/AQI_Category.png)
+![AQI](images/AQI_Category.png)
 #Data Pipeline
 
-![Pipeline](/Users/vishallella/Documents/workspace/AirLive/images/pipeline.png)
+![Pipeline](images/pipeline.png)
 
 #Technologies Used
  - Data Source
@@ -131,18 +131,18 @@ Dumped the data in S3 bucket so that using Athena
 ```
 
 #Real time Visualization
-![Kibana](/Users/vishallella/Documents/workspace/AirLive/images/kibana_zoomout.png)
+![Kibana](images/kibana_zoomout.png)
 
 Here we have geo hash map encoding the AQI value, let's zoom in to see the AQI density across the globe.
 
 
-![Kibana](/Users/vishallella/Documents/workspace/AirLive/images/kibana_zoomin.png)
+![Kibana](images/kibana_zoomin.png)
 
 
 #Real time Alerting
 
 I have a subscriber who is in the vicinity of a hazardous city who will be getting notification soon. For demo purpose, I am the subscriber registered to subscriber registration service with my mobile number. I will be getting notfication alerting regarding AQI category and AQI value.
-![Kibana](/Users/vishallella/Documents/workspace/AirLive/images/alerting.png)
+![Kibana](images/alerting.png)
 
 
 #Batch querying
@@ -161,7 +161,7 @@ limit 10
 
 Response
 
-![Athena1](/Users/vishallella/Documents/workspace/AirLive/images/athena1.png)
+![Athena1](images/athena1.png)
 
 
 
@@ -180,4 +180,4 @@ ORDER BY POLLUTION_RANK
 ```
 
 Result:
-![Athena2](/Users/vishallella/Documents/workspace/AirLive/images/athena2.png)
+![Athena2](images/athena2.png)
